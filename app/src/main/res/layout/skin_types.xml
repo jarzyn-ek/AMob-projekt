@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+                                                   android:background="#dfbf9f">
+
+    <TextView
+            android:text="Choose your skin type:"
+            android:layout_width="226dp"
+            android:layout_height="45dp"
+            android:id="@+id/textView2"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintVertical_bias="0.107"/>
+    <RadioGroup
+            android:layout_width="390dp"
+            android:layout_height="259dp"
+            android:id="@+id/radioGroup"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.476"
+            app:layout_constraintVertical_bias="0.252">
+        <RadioButton
+                android:text="Very fair skin, white; red or blond hair; light-colored eyes; freckles likely"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/radioButton1"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"/>
+        <RadioButton
+                android:text="Fair skin, white; light eyes; light hair"
+                android:layout_width="402dp"
+                android:layout_height="40dp"
+                android:id="@+id/radioButton2"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"/>
+        <RadioButton
+                android:text="Fair skin, cream white; any eye or hair color "
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/radioButton3"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"/>
+        <RadioButton
+                android:text="Olive skin, typical Mediterranean Caucasian skin; dark brown hair; medium to heavy pigmentation"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/radioButton4"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"/>
+        <RadioButton
+                android:text="Brown skin, typical Middle Eastern skin; dark hair"
+                android:layout_width="438dp"
+                android:layout_height="40dp"
+                android:id="@+id/radioButton5"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"/>
+        <RadioButton
+                android:text="Black skin; rarely sun sensitive"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/radioButton6"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"/>
+    </RadioGroup>
+    <ImageView
+            android:layout_width="231dp"
+            android:layout_height="170dp" app:srcCompat="@drawable/s1"
+            android:id="@+id/imageViewSkinType"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.743"/>
+    <Button
+            android:text="Start BAKING"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonStartBaking" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintVertical_bias="0.947"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
